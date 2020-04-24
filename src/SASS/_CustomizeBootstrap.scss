@@ -1,0 +1,6 @@
+$theme-colors: (
+    "primary":$cyan,
+    "darkPrimary":$dark-violet
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

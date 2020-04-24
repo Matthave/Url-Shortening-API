@@ -1,0 +1,42 @@
+$breakpoints: (
+xsmall: (min-width: 460px),
+small: (min-width: 640px),
+medium: (min-width: 800px),
+large: (min-width: 1024px),
+xlarge: (min-width: 1200px),
+xxlarge: (min-width: 1440px),
+);
+
+@mixin mq($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint );
+  @if($size){
+    @media #{$size}{
+    @content
+    }
+  }
+}; 
+
+
+
+@mixin btn {
+    width:200px;
+    height: 50px;
+    border-radius: 30px;
+    border:none;
+    background-color: $cyan;
+    margin-top: 20px;
+    font-size: 2rem;
+    color:white;   
+    font-weight: 600;
+};
+
+@mixin title {
+
+};
+
+@mixin text {
+font-size: 1.8rem;
+padding: 0px 15px;
+color:$grayish-biolet;
+font-weight: 600;
+};

@@ -1,0 +1,91 @@
+.shorten{
+		position: relative;
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: $dark-violet;
+		margin: 0 auto;
+    &__img{
+        position: relative;
+        display: block;
+        width:70%;
+        top:0;
+        right:0;
+        margin:0 0 0 auto;
+        border-top-right-radius: 15px;
+        background-color: transparent;
+    }
+    &__formWrap{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        text-align:center;
+    }
+    &__input{
+        width:90%;
+        height: 45px;
+        margin:0 auto;
+        font-size: 1.5rem;
+				border-radius: 7.5px;
+				border:none;
+				padding: 3px 5px;
+    }
+    &__btn{
+        @include btn;
+        width: 90%;
+        height: 45px;
+        margin:10px auto 0 auto;
+        font-size: 1.5rem;
+        border-radius: 7.5px;
+    }
+}
+
+.shortenWrap{
+	position: relative;
+	top:-100px;
+}
+
+
+.shortenLink{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width:90%;
+	height: 200px;
+	border-radius: 15px;
+	background-color: #fff;
+	margin: 30px auto 0 ;
+	&__old{
+		display: block;
+		width:90%;
+		margin: 0px auto;
+		font-size: 1.5rem;
+		word-break: break-all;
+		color: #000;
+	}
+	&__new{
+		display: block;
+		width:90%;
+		margin: 0px auto;
+		font-size: 1.5rem;
+		color:$cyan;
+	}
+	&__btn{
+		@include btn;
+		width: 90%;
+		height: 45px;
+		margin:0 auto;
+		font-size: 1.5rem;
+		border-radius: 7.5px;
+		transition: 0.2s linear;
+		&:hover{
+			background-color: $dark-violet;
+		}
+	}
+}
