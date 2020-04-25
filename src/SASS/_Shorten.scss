@@ -32,9 +32,9 @@
         height: 45px;
         margin:0 auto;
         font-size: 1.5rem;
-				border-radius: 7.5px;
-				border:none;
-				padding: 3px 5px;
+		border-radius: 7.5px;
+		border:none;
+		padding: 3px 5px;
     }
     &__btn{
         @include btn;
@@ -42,8 +42,15 @@
         height: 45px;
         margin:10px auto 0 auto;
         font-size: 1.5rem;
-        border-radius: 7.5px;
-    }
+		border-radius: 7.5px;
+	}
+	&__invalid{
+		display:block;
+		width:90%;
+		color:red;
+		text-align: start;
+		margin: 5px auto 0px auto;
+	}
 }
 
 .shortenWrap{
@@ -63,10 +70,12 @@
 	margin: 30px auto 0 ;
 	&__old{
 		display: block;
+		overflow-y: scroll;
 		width:90%;
+		max-height: 60px;
 		margin: 0px auto;
 		font-size: 1.5rem;
-		word-break: break-all;
+		word-break: break-all;       
 		color: #000;
 	}
 	&__new{
@@ -79,7 +88,7 @@
 	&__btn{
 		@include btn;
 		width: 90%;
-		height: 45px;
+		height: 40px;
 		margin:0 auto;
 		font-size: 1.5rem;
 		border-radius: 7.5px;

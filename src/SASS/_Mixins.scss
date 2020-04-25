@@ -31,7 +31,10 @@ xxlarge: (min-width: 1440px),
 };
 
 @mixin title {
-
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color:$very-dark-blue;
 };
 
 @mixin text {

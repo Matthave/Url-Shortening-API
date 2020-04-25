@@ -1,0 +1,59 @@
+.boostLink{
+    background-color: $dark-violet;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../images//bg-boost-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 275px;
+    margin-top: 75px;;
+    &__title{
+        @include title;
+        color:white;
+        font-size: 2.5rem;
+    }
+    &__btn{
+        @include btn;
+        margin:0 auto;
+    }
+}
+
+footer{
+    background-color: $very-dark-violet;
+}
+.contact{
+    padding:45px 0px;
+    &__title{
+        text-align: center;
+        color:white;
+        font-size: 4rem;
+    }
+    &__list{
+        text-align: center;
+        color:$grayish-biolet;
+        margin-top:40px;
+    }
+    &__link{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 7px;
+    }
+}
+
+.contact__list > .contact__link:nth-child(1){
+    color:white;
+    margin-bottom: 20px;
+}
+
+.socialMedia{
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 45px 0px;
+  cursor: pointer;
+  &__img{
+    margin:0px 10px;
+  }
+}
