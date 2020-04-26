@@ -19,6 +19,7 @@
      font-size: 2.6rem;
        @include mq(large){
         width:100%;
+        font-size: 3.3rem;
   }
     }
     &__text{
@@ -27,6 +28,10 @@
        @include mq(large){
         width:100%;
         margin-bottom: 55px;
+        font-size: 1.8rem;
+        width:45%;
+        margin-left: auto;
+        margin-right: auto;
   }
     }
 }
@@ -45,10 +50,12 @@
   padding-right: 10px;
   padding-left: 10px;
   border-radius: 5px;
+  z-index: 5;
   @include mq(large){
     width:33%;
     margin-left: 15px;
     margin-right:15px;
+    padding-bottom: 30px;
     &:nth-child(2){
      transform: translateY(40px);
     }
@@ -76,11 +83,38 @@
   }
   &__title{
     @include title;
+    @include mq(large){
+      text-align: start;
+      padding: 10px 15px;
+    }
+    @include mq(xlarge){
+      font-size: 2.4rem;
+    }
   }
   &__text{
     @include text;
     font-size: 1.6rem;
     font-weight: 500;
+    @include mq(large){
+      text-align: start;
+    }
+    @include mq(xlarge){
+      font-size: 1.7rem;
+    }
+  }
+  &__spanBar{
+    position: absolute;
+    width:7.5px;
+    height: 100px;
+    background-color:$cyan;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,0);
+    @include mq(large){
+      top:50%;
+      left:100%;
+      transform:translate(48px,-50%) rotate(90deg)
+    }
   }
 }
 
@@ -92,6 +126,9 @@
   background-image: url('../images/icon-fully-customizable.svg');
 }
 
+.box:nth-child(3) > .box__spanBar{
+  display: none;
+}
 
 .boxWrap{
   @include mq(large){

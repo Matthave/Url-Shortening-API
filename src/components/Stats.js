@@ -30,6 +30,7 @@ const boxes = [
 function Stats() {
   const boxesMap = boxes.map((box) => (
     <div key={box.id} className="box">
+      <span className="box__spanBar"></span>
       <div src='' alt="" className="box__img"></div>
       <h2 className="box__title">{box.title}</h2>
       <p className="box__text">{box.text}</p>

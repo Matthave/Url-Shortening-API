@@ -32,16 +32,24 @@
       font-weight: 700;
       padding-bottom: 10px;
       color:$very-dark-blue;
-              @include mq(large){
+         @include mq(large){
          text-align: start;
         }
+        @include mq(xlarge){
+          text-align: start;
+          font-size: 7rem;
+         }
     }
     &__text{
      @include text;
-             @include mq(large){
+         @include mq(large){
          text-align: start;
          padding-left: 0;
         }
+        @include mq(xlarge){
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+         }
     }
     &__btn{
     @include btn;

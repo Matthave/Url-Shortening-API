@@ -43,6 +43,9 @@
     }
     &__item{
         margin-left: 15px;
+        @include mq(large){
+            margin-left: 25px;
+        }
     }
     &__link{
         font-size: 1.5rem;

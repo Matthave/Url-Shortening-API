@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer>
       <div className="boostLink">
-        <h2 className="boostLink__title">Boost your link today</h2>
+        <h2 className="boostLink__title">Boost your links today</h2>
         <button className="boostLink__btn">Get Started</button>
         {/* <img src={boostImg} alt="" className="boostLink__img" /> */}
       </div>
