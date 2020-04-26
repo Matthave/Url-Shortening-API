@@ -41,7 +41,10 @@ function Stats() {
       <p className="stats__text">Track how your links are performing across the web with our
       advanced statistics dashboard.
       </p>
-      {boxesMap}
+      <div className="boxWrap">
+        {boxesMap}
+      </div>
+
     </section>
   )
 }

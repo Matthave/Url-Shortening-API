@@ -1,13 +1,33 @@
 .stats{
   text-align: center;
+  background-color: $gray;
+  padding-bottom: 55px;
+  @include mq(large){
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom:175px;
+    padding-left:100px;
+    padding-right: 100px;
+  }
+  @include mq(xlarge){
+    padding-left:150px;
+    padding-right:150px;
+  }
     &__title{
      @include title;
      color:$very-dark-violet;
      font-size: 2.6rem;
+       @include mq(large){
+        width:100%;
+  }
     }
     &__text{
      @include text;
      color:$very-dark-blue;
+       @include mq(large){
+        width:100%;
+        margin-bottom: 55px;
+  }
     }
 }
 
@@ -25,6 +45,17 @@
   padding-right: 10px;
   padding-left: 10px;
   border-radius: 5px;
+  @include mq(large){
+    width:33%;
+    margin-left: 15px;
+    margin-right:15px;
+    &:nth-child(2){
+     transform: translateY(40px);
+    }
+    &:nth-child(3){
+      transform: translateY(80px);
+     }
+  }
   &__img{
     position: absolute;
     transform: translate(-50%,-50%);
@@ -39,6 +70,9 @@
     height:50px;
     box-sizing: content-box;
     padding: 15px;
+    @include mq(large){
+      left:23%;
+    }
   }
   &__title{
     @include title;
@@ -56,4 +90,11 @@
 
 .box:nth-child(5) > .box__img{
   background-image: url('../images/icon-fully-customizable.svg');
+}
+
+
+.boxWrap{
+  @include mq(large){
+    display: flex;
+  }
 }

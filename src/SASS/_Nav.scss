@@ -20,3 +20,38 @@
 .collapse{
     margin-top: 50px;
 }
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 20px;
+    @include mq(small){
+    padding: 15px 75px;
+    }
+    @include mq(large){
+        padding: 25px 100px;
+        }
+    @include mq(xlarge){
+        padding: 35px 150px;
+        }
+    &__ul{
+    align-self: center;
+    flex-grow: 1;
+    display: flex;
+    list-style: none;
+    margin:0;
+    }
+    &__item{
+        margin-left: 15px;
+    }
+    &__link{
+        font-size: 1.5rem;
+        color:$very-dark-blue;
+        font-weight: 600;
+    }
+}
+
+.nav__ul > .nav__item:nth-last-child(1){
+    margin-left: auto;
+    margin-right: 20px;;
+}

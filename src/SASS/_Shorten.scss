@@ -1,11 +1,19 @@
 .shorten{
-		position: relative;
+	position: relative;
     display: flex;
     flex-direction: column;
     width:90%;
     height: 200px;
-    border-radius: 15px;
-    background-color: $dark-violet;
+	border-radius: 15px;
+	background-image: url('../images/bg-shorten-mobile.svg');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: $dark-violet;
+	@include mq(large){
+		width:100%;
+		background-image: url('../images/bg-shorten-desktop.svg');
+		background-size: cover;
+	}
 		margin: 0 auto;
     &__img{
         position: relative;
@@ -15,7 +23,10 @@
         right:0;
         margin:0 0 0 auto;
         border-top-right-radius: 15px;
-        background-color: transparent;
+		background-color: transparent;
+		@include mq(large){
+			display: none;
+		}
     }
     &__formWrap{
         position: absolute;
@@ -56,6 +67,12 @@
 .shortenWrap{
 	position: relative;
 	top:-100px;
+	@include mq(large){
+		padding: 0px 100px;
+	}
+	@include mq(xlarge){
+		padding: 0px 150px;
+	}
 }
 
 

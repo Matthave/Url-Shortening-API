@@ -33,13 +33,14 @@ function Footer() {
           <li className="contact__link">Careers</li>
           <li className="contact__link">Contact</li>
         </ul>
+        <div className="socialMedia">
+          <img src={facebookImg} alt="" className="socialMedia__img" />
+          <img src={twitterImg} alt="" className="socialMedia__img" />
+          <img src={pinterestImg} alt="" className="socialMedia__img" />
+          <img src={instagramImg} alt="" className="socialMedia__img" />
+        </div>
       </div>
-      <div className="socialMedia">
-        <img src={facebookImg} alt="" className="socialMedia__img" />
-        <img src={twitterImg} alt="" className="socialMedia__img" />
-        <img src={pinterestImg} alt="" className="socialMedia__img" />
-        <img src={instagramImg} alt="" className="socialMedia__img" />
-      </div>
+
     </footer>
   )
 }

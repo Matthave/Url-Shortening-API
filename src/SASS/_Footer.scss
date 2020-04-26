@@ -9,7 +9,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 275px;
-    margin-top: 75px;;
+    @include mq(large){
+     background-image: url('../images//bg-boost-desktop.svg');   
+    }
     &__title{
         @include title;
         color:white;
@@ -18,28 +20,44 @@
     &__btn{
         @include btn;
         margin:0 auto;
+        transition: 0.2s linear;
+        &:hover{
+            background-color: lighten($cyan, 7.5%);
+          }
     }
 }
 
 footer{
     background-color: $very-dark-violet;
 }
+
 .contact{
     padding:45px 0px;
+    @include mq(large){
+        display: flex;
+        justify-content: space-around;
+    }
     &__title{
         text-align: center;
         color:white;
         font-size: 4rem;
+        @include mq(large){
+          align-self: center;
+        }
     }
     &__list{
         text-align: center;
         color:$grayish-biolet;
         margin-top:40px;
+        list-style: none;
     }
     &__link{
         font-size: 1.5rem;
         font-weight: 600;
         margin-top: 7px;
+        @include mq(large){
+         text-align: start;
+        }
     }
 }
 
@@ -51,9 +69,15 @@ footer{
 .socialMedia{
   display: flex;
   justify-content: center;
-  padding: 0px 0px 45px 0px;
+  padding: 45px 0px 0px 0px;
+  align-self: center;
+  @include mq(large){
+    padding:0;
+  }
   cursor: pointer;
   &__img{
     margin:0px 10px;
+    width:20px;
+    height: 20px;
   }
 }

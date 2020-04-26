@@ -1,12 +1,10 @@
 import React from 'react';
-import bgShortenMobile from '../images/bg-shorten-mobile.svg';
 
 function Shorter(props) {
   const { handleInputValue, addNewShortenLink, inputValue } = props;
   return (
     <div className='shortenWrap'>
       <section className='shorten'>
-        <img src={bgShortenMobile} alt="" className="shorten__img" />
         <div className="shorten__formWrap">
           <input
             type="text"

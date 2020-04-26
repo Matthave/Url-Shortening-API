@@ -171,9 +171,9 @@ class App extends Component {
             inputValue={this.state.inputValue}
             addNewShortenLink={this.addNewShortenLink}
           />
-          <Stats />
-          <Footer />
         </main>
+        <Stats />
+        <Footer />
       </div>
     );
   }
