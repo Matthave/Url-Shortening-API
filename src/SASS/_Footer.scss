@@ -46,7 +46,7 @@ footer{
         color:white;
         font-size: 4rem;
         @include mq(large){
-          align-self: center;
+         margin-top: 40px;
         }
     }
     &__list{

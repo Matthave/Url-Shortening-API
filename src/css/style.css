@@ -10946,7 +10946,7 @@ html {
 }
 
 main {
-  background-color: #bfbfbf;
+  background-color: #F0F1F6;
   margin-top: 100px;
 }
 
@@ -11436,7 +11436,7 @@ main {
 
 .stats {
   text-align: center;
-  background-color: #bfbfbf;
+  background-color: #F0F1F6;
   padding-bottom: 55px;
 }
 
@@ -11727,9 +11727,7 @@ footer {
 
 @media (min-width: 1024px) {
   .contact__title {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    margin-top: 40px;
   }
 }
 
