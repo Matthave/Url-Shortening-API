@@ -48,17 +48,23 @@ class App extends Component {
   }
 
   addNewShortenLink = () => {
+
     const { inputValue, newLink } = this.state;
     const catchErr = document.querySelector('.shorten__invalid');
     if (inputValue === '') {
       document.querySelector('.shorten__input').style.border = "1px solid red"
       catchErr.textContent = "Invalid URL value. Value can't be 0"
 
+    } else if (inputValue.search('http') === -1) {
+      document.querySelector('.shorten__input').style.border = "1px solid red"
+      catchErr.textContent = "Invalid URL value. Value must have http"
+
     } else if (inputValue.length < 8) {
       document.querySelector('.shorten__input').style.border = "1px solid red"
       catchErr.textContent = 'Invalid URL value. Value must be longer then 8'
 
     } else if (inputValue.length > 8 && newLink !== '') {
+      console.log(inputValue)
       document.querySelector('.shorten__input').style.border = "none"
       catchErr.textContent = ''
       const shortenLink = document.createElement('div');
@@ -130,6 +136,12 @@ class App extends Component {
     const currentShortenLink = e.target.parentNode;
     const txt = currentShortenLink.children[2].textContent;
     this.copyToClp(txt)
+    const allCopyButton = document.querySelectorAll('.shortenLink__btn');
+
+    allCopyButton.forEach((element) => {
+      element.style.backgroundColor = 'hsl(180, 66%, 49%)';
+      element.textContent = 'Copy';
+    })
 
     e.target.style.backgroundColor = 'hsl(257, 27%, 26%)';
     e.target.textContent = 'Copied!'

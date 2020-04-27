@@ -51,7 +51,7 @@ footer{
     }
     &__list{
         text-align: center;
-        color:$grayish-biolet;
+        color:$grayish-violet;
         margin-top:40px;
         list-style: none;
     }
@@ -61,6 +61,11 @@ footer{
         margin-top: 7px;
         @include mq(large){
          text-align: start;
+         transition: 0.2s linear;
+         cursor: pointer;
+         &:hover{
+             color: hsl(180, 66%, 49%);
+         }
         }
     }
 }
@@ -74,7 +79,6 @@ footer{
   display: flex;
   justify-content: center;
   padding: 45px 0px 0px 0px;
-  align-self: center;
   @include mq(large){
     padding:0;
   }
@@ -83,5 +87,11 @@ footer{
     margin:0px 10px;
     width:20px;
     height: 20px;
+    @include mq(large){
+        margin-top: 40px;
+        &:hover{
+            color: hsl(180, 66%, 49%);
+        }
+    }
   }
 }

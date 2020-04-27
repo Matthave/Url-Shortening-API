@@ -14,16 +14,16 @@ class Nav extends Component {
             <img src={logo} alt='logoImg' className="nav__img" />
             <ul className="nav__ul">
               <li className="nav__item">
-                <a className="nav__link" href="#">Features></a>
+                <a className="nav__link text-decoration-none" href="#">Features</a>
               </li>
               <li className="nav__item">
-                <a className="nav__link" href="#">Pricing</a>
+                <a className="nav__link text-decoration-none" href="#">Pricing</a>
               </li>
               <li className="nav__item">
-                <a className="nav__link" href="#" tabIndex="-1" >Resources</a>
+                <a className="nav__link text-decoration-none" href="#" tabIndex="-1" >Resources</a>
               </li>
               <li className="nav__item">
-                <a className="nav__link" href="#" tabIndex="-1" >Login</a>
+                <a className="nav__link text-decoration-none" href="#" tabIndex="-1" >Login</a>
               </li>
             </ul>
             <button className="btn btn-primary px-4" type="submit">Sing Up</button>
